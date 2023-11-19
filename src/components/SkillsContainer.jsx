@@ -7,6 +7,8 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { LuTestTubes } from "react-icons/lu";
 import { SiTailwindcss } from "react-icons/si";
 import { WiTrain } from "react-icons/wi";
+import {findAllByDisplayValue} from "@testing-library/react";
+import MiniNav from "./MiniNav.jsx";
 
 
 
@@ -15,7 +17,11 @@ import { WiTrain } from "react-icons/wi";
 
 
 export default function SkillsContainer(){
-    return <div className="grid grid-cols-4 w-1/2 gap-4  border-4 border-sky-500 p-5 rounded-md my-10 mx-auto ">
+    return  <div>
+        <MiniNav/>
+        <h1 className={"text-6xl text-center my-10"}>My Skills</h1>
+        <p className={"text-center"}>Hover/tap for more info!</p>
+    <div className="grid grid-cols-4 w-5/6 gap-4  border-4 border-sky-500 p-5 rounded-md my-10 mx-auto ">
         <section>
             <h3 className="text-center">JavaScript</h3>
 
@@ -23,7 +29,7 @@ export default function SkillsContainer(){
                 <HoverCard width={280} shadow="md">
 
                     <HoverCard.Target>
-                        <Button><IoLogoJavascript size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><IoLogoJavascript size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -39,7 +45,7 @@ export default function SkillsContainer(){
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><FaReact size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><FaReact size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -54,7 +60,7 @@ export default function SkillsContainer(){
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><FaHtml5 size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><FaHtml5 size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -69,7 +75,7 @@ export default function SkillsContainer(){
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><FaCss3Alt size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><FaCss3Alt size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -84,7 +90,7 @@ export default function SkillsContainer(){
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><FaNode size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><FaNode size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -95,11 +101,11 @@ export default function SkillsContainer(){
             </Group>
         </section>
         <section>
-            <h3 className="text-center">Express JS</h3>
+            <h3 className="text-center">Express</h3>
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><WiTrain size="2em" />
+                        <Button style={{height: "5rem", width: "5rem"}}><WiTrain size="2em" />
                         </Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
@@ -115,7 +121,7 @@ export default function SkillsContainer(){
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><AiOutlineConsoleSql size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><AiOutlineConsoleSql size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -125,11 +131,11 @@ export default function SkillsContainer(){
             </Group>
         </section>
         <section>
-            <h3 className="text-center">PostgreSQL</h3>
+            <h3 className="text-center">Postgres</h3>
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><DiPostgresql size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><DiPostgresql size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -143,7 +149,7 @@ export default function SkillsContainer(){
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><IoLogoFirebase size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><IoLogoFirebase size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -158,7 +164,7 @@ export default function SkillsContainer(){
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><LuTestTubes size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><LuTestTubes size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -169,11 +175,11 @@ export default function SkillsContainer(){
             </Group>
         </section>
         <section>
-            <h3 className="text-center">Tailwind CSS</h3>
+            <h3 className="text-center">Tailwind</h3>
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><SiTailwindcss size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><SiTailwindcss size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -188,7 +194,7 @@ export default function SkillsContainer(){
             <Group justify="center">
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
-                        <Button><FaGithub size="2em" /></Button>
+                        <Button style={{height: "5rem", width: "5rem"}}><FaGithub size="2em" /></Button>
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text size="sm">
@@ -199,4 +205,5 @@ export default function SkillsContainer(){
             </Group>
         </section>
     </div>
+   </div>
 }

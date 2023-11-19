@@ -2,7 +2,7 @@ import "animate.css";
 import { MdPets } from "react-icons/md";
 export default function Header() {
   return (
-    <header className="flex flex-col mx-auto w-5/6 items-center">
+    <header className="flex flex-col mx-auto w-5/6 items-center ">
       <h2 className="text-5xl font-bold underline my-5">
         Hi, I'm Harry, and i'm a...
       </h2>
@@ -16,6 +16,7 @@ export default function Header() {
       <h1 className=" text-7xl">
         Software Developer
       </h1>
+        <p style={{marginTop: "6rem"}}>Click below See if i'm a good fit :)</p>
     </header>
   );
 }
