@@ -41,6 +41,7 @@ export default function SkyeNewsFE() {
             </li>
           </ul>
           <img
+            loading={"lazy"}
             className={"w-10/12 mx-auto"}
             src={skye}
             alt="screenshot of Skye News Homepage"
@@ -125,8 +126,8 @@ export default function SkyeNewsFE() {
               </Group>
             </section>
           </div>
-          <div className={"w-100% md:flex "}>
-            <div className={"flex-grow"}>
+          <div className={"w-100% md:flex bg-lime-100 "}>
+            <div className={"w-1/2"}>
               <h2 className={"font-bold"}>Features:</h2>
               <ol className={"bg-lime-100 flex-col flex gap-4 "}>
                 <li>
