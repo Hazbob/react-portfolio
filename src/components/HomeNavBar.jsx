@@ -7,25 +7,25 @@ export default function HomeNavBar(){
             <ul className="grid grid-cols-2 text-center text-4xl gap-5">
                 <Link to={"/skills"}>
 
-                <li className="flex flex-col items-center gap-4 bg-blue-300 w-20% px-10 py-5 rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2">
-                    <GiBrain size={"3em"} />
+                <li className="flex flex-col items-center gap-4 bg-blue-300 w-20% px-10 py-5 rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2 text-2xl">
+                    <GiBrain size={"2em"} />
 
                     Skills
                 </li>
                 </Link>
                 <Link to={"/projects"}>
-                <li className="flex flex-col items-center gap-4 bg-fuchsia-200 w-20% px-10 py-5 rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2">
-                    <FaCode size={"3em"} />
+                <li className="flex flex-col items-center gap-4 bg-fuchsia-200 w-20% px-10 py-5 rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2 text-2xl">
+                    <FaCode size={"2em"} />
                     Projects
                 </li>
                 </Link>
                 <Link to={"/about"}>
-                <li className="flex flex-col items-center gap-4 bg-emerald-200 w-20% px-10 py-5 rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2"><FaInfoCircle size="3em" />
-                    About Me</li>
+                <li className="flex flex-col items-center gap-4 bg-emerald-200 w-20% px-10 py-5 rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2 text-2xl"><FaInfoCircle size="2em" />
+                    About</li>
                 </Link>
                 <Link to={"Contact"}>
-                <li className="flex flex-col items-center gap-4 bg-violet-300 w-20% px-10 py-5 rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2">
-                    <RiContactsFill size="3em" />
+                <li className="flex flex-col items-center gap-4 bg-violet-300 w-20% px-10 py-5 rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2 text-2xl">
+                    <RiContactsFill size="2em" />
                     Contact
                 </li>
                 </Link>

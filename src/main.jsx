@@ -4,6 +4,7 @@ import Root from './routes/Root.jsx'
 import "./index.css";
 import "@mantine/core/styles.css";
 import { MantineProvider, createTheme } from "@mantine/core";
+import ProjectsPage from "./components/ProjectsPage.jsx";
 
 import {
     createBrowserRouter,
@@ -11,7 +12,6 @@ import {
 } from "react-router-dom";
 import AppContainer from "./components/AppContainer.jsx";
 import ErrorPage from "./error-page.jsx";
-import TrippyCarousel from "./components/ProjectCarousel.jsx";
 import SkillsContainer from "./components/SkillsContainer.jsx";
 
 
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/projects",
-                element: <TrippyCarousel/>
+                element: <ProjectsPage/>
             },
             {
                 path: "/skills",
