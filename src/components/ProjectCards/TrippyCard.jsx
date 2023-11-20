@@ -6,9 +6,12 @@ import { TbBrandReactNative } from "react-icons/tb";
 import { SiExpo, SiTypescript } from "react-icons/si";
 import { FaGithub, FaYoutube } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { GiClick } from "react-icons/gi";
+import { useState } from "react";
 
 export default function TrippyCard() {
   const [opened, { open, close }] = useDisclosure(false);
+  const [showMore, setShowMore] = useState(false);
 
   return (
     <div>
@@ -140,59 +143,69 @@ export default function TrippyCard() {
               </Group>
             </section>
           </div>
-          <div className={"w-100% md:flex bg-lime-100 "}>
-            <div className={"w-1/2"}>
-              <h2 className={"font-bold"}>Features:</h2>
-              <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                <li>
-                  <span className={"font-bold"}>1.</span> Teacher can create a
-                  trip, invite students to that trip and plan the trip while
-                  keeping students and parents updated.
-                </li>
-                <li>
-                  <span className={"font-bold"}>2.</span> Teacher can edit trip
-                  details.
-                </li>
-                <li>
-                  <span className={"font-bold"}>3.</span> Teacher can scan QR
-                  code generated on students phones to register them, while
-                  seeing a list of the missing students.
-                </li>
-                <li>
-                  <span className={"font-bold"}>4.</span> Teacher can place
-                  meeting points on a map, that is then rendered in the students
-                  accounts so they can see where to meetup.
-                </li>
-                <li>
-                  <span className={"font-bold"}>5.</span> Student can see an
-                  inventory list for the trip and the info of the trip to plan
-                  ahead
-                </li>
-                <li>
-                  <span className={"font-bold"}>6.</span> Parents can see the
-                  price of the trip, location, and inventory of ONLY the trips
-                  their child is invited on
-                </li>
-              </ol>
+          <Button
+            className={"rounded-none flex"}
+            onClick={() => setShowMore(!showMore)}
+            fullWidth
+          >
+            Toggle More Info!
+            <GiClick />
+          </Button>
+          {showMore && (
+            <div className={"w-100% md:flex bg-lime-100 "}>
+              <div className={"w-full md:w-1/2"}>
+                <h2 className={"font-bold"}>Features:</h2>
+                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
+                  <li>
+                    <span className={"font-bold"}>1.</span> Teacher can create a
+                    trip, invite students to that trip and plan the trip while
+                    keeping students and parents updated.
+                  </li>
+                  <li>
+                    <span className={"font-bold"}>2.</span> Teacher can edit
+                    trip details.
+                  </li>
+                  <li>
+                    <span className={"font-bold"}>3.</span> Teacher can scan QR
+                    code generated on students phones to register them, while
+                    seeing a list of the missing students.
+                  </li>
+                  <li>
+                    <span className={"font-bold"}>4.</span> Teacher can place
+                    meeting points on a map, that is then rendered in the
+                    students accounts so they can see where to meetup.
+                  </li>
+                  <li>
+                    <span className={"font-bold"}>5.</span> Student can see an
+                    inventory list for the trip and the info of the trip to plan
+                    ahead
+                  </li>
+                  <li>
+                    <span className={"font-bold"}>6.</span> Parents can see the
+                    price of the trip, location, and inventory of ONLY the trips
+                    their child is invited on
+                  </li>
+                </ol>
+              </div>
+              <div>
+                <h2 className={"font-bold"}>Key Learnings:</h2>
+                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
+                  <li>
+                    <span className={"font-bold"}>1.</span> Spend more time
+                    deciding on SQL or No SQL.
+                  </li>
+                  <li>
+                    <span className={"font-bold"}>2.</span> If communication is
+                    lacking, organise more huddles.
+                  </li>
+                  <li>
+                    <span className={"font-bold"}>3.</span> Reader mode on
+                    browsers makes docs a lot more digestible and memorable.
+                  </li>
+                </ol>
+              </div>
             </div>
-            <div>
-              <h2 className={"font-bold"}>Key Learnings:</h2>
-              <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                <li>
-                  <span className={"font-bold"}>1.</span> Spend more time
-                  deciding on SQL or No SQL.
-                </li>
-                <li>
-                  <span className={"font-bold"}>2.</span> If communication is
-                  lacking, organise more huddles.
-                </li>
-                <li>
-                  <span className={"font-bold"}>3.</span> Reader mode on
-                  browsers makes docs a lot more digestible and memorable.
-                </li>
-              </ol>
-            </div>
-          </div>
+          )}
         </section>
       </ScrollArea>
     </div>

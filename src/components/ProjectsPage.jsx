@@ -3,6 +3,7 @@ import TrippyCard from "./ProjectCards/TrippyCard.jsx";
 import { Button } from "@mantine/core";
 import MiniNav from "./MiniNav.jsx";
 import SkyeNewsFE from "./ProjectCards/SkyeNewsFE.jsx";
+import SkyeNewsBE from "./ProjectCards/SkyeNewsBE.jsx";
 export default function ProjectsPage() {
   const [curProject, setProject] = useState("trippy");
 
@@ -23,16 +24,21 @@ export default function ProjectsPage() {
           >
             Skye News FE
           </Button>
-          <Button variant="default">Skye News BE</Button>
+          <Button
+            onClick={() => setProject("skyebe")}
+            variant={curProject === "skyebe" ? "primary" : "default"}
+          >
+            Skye News BE
+          </Button>
         </Button.Group>
       </nav>
       {curProject === "trippy" ? (
         <TrippyCard />
       ) : curProject === "skye" ? (
         <SkyeNewsFE />
-      ) : (
-        ""
-      )}
+      ) : curProject === "skyebe" ? (
+        <SkyeNewsBE />
+      ) : null}
     </div>
   );
 }
