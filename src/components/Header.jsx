@@ -12,13 +12,10 @@ export default function Header() {
       <h2 className="text-2xl  xl:text-5xl font-bold  xl:my-5">
         Hi, I'm Harry, and i'm a...
       </h2>
-      <p className=" text-2xl flex justify-center items-center text-gray-400">
-        // Dog Dad
-      </p>
       <h1 className="text-2xl  xl:text-5xl font-bold  xl:my-5x">
         Software Developer
       </h1>
-      <p className="my-1">See below if i'm a good fit :)</p>
+      <p className="my-1">See below if i'm a good fit</p>
     </header>
   );
 }
