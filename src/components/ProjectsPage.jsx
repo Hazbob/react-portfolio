@@ -9,7 +9,6 @@ export default function ProjectsPage() {
 
   return (
     <div className={"bg-blue-50"}>
-      <MiniNav />
       <nav className={"flex w-screen"}>
         <Button.Group>
           <Button

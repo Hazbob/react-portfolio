@@ -13,7 +13,6 @@ import MiniNav from "./MiniNav.jsx";
 export default function SkillsContainer() {
   return (
     <div>
-      <MiniNav />
       <h1 className={"text-3xl text-center my-2 xl:text-4xl  xl:my-4"}>
         My Skills
       </h1>
