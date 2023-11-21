@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   const [curProject, setProject] = useState("trippy");
 
   return (
-    <div>
+    <div className={"bg-blue-50"}>
       <MiniNav />
       <nav className={"flex w-screen"}>
         <Button.Group>

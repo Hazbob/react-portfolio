@@ -13,8 +13,8 @@ import { useState } from "react";
 export default function SkyeNewsFE() {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div>
-      <ScrollArea className={"bg-white"}>
+    <div style={{ height: "80vh" }}>
+      <ScrollArea className={"bg-blue-50"}>
         <section>
           <h2 className={"text-center text-4xl font-bold"}>
             Skye News FE - News Web App
