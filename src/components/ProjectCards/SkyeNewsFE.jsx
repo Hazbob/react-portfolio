@@ -45,7 +45,7 @@ export default function SkyeNewsFE() {
           </ul>
           <img
             loading={"lazy"}
-            className={"w-10/12 mx-auto"}
+            className={"w-10/12 mx-auto md:w-3/5"}
             src={skye}
             alt="screenshot of Skye News Homepage"
           />

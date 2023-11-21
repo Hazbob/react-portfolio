@@ -11,6 +11,11 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiAxios } from "react-icons/si";
 import { GiClick } from "react-icons/gi";
 import skyeBE from "../../assets/skyenewsbe.png";
+import { SiJest } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+import { WiTrain } from "react-icons/wi";
+import { DiPostgresql } from "react-icons/di";
+import { AiOutlineConsoleSql } from "react-icons/ai";
 
 export default function SkyeNewsBE() {
   const [showMore, setShowMore] = useState(false);
@@ -47,7 +52,7 @@ export default function SkyeNewsBE() {
           </ul>
           <img
             loading={"lazy"}
-            className={"w-10/12 mx-auto"}
+            className={"w-10/12 mx-auto md:w-2/5"}
             src={skyeBE}
             alt="screenshot of Skye News Backend Code"
           />
@@ -80,7 +85,7 @@ export default function SkyeNewsBE() {
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
                     <Button className={"text-xl"}>
-                      <FaReact size={"2em"} />
+                      <FaNode size={"2em"} />
                     </Button>
                   </HoverCard.Target>
                   <HoverCard.Dropdown>
@@ -100,7 +105,7 @@ export default function SkyeNewsBE() {
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
                     <Button className={"text-xl"}>
-                      <SiAxios size={"2em"} />
+                      <WiTrain size={"2em"} />
                     </Button>
                   </HoverCard.Target>
                   <HoverCard.Dropdown>
@@ -116,7 +121,7 @@ export default function SkyeNewsBE() {
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
                     <Button className={"text-xl"}>
-                      <FaCss3Alt size={"2em"} />
+                      <SiJest size={"2em"} />
                     </Button>
                   </HoverCard.Target>
                   <HoverCard.Dropdown>
@@ -134,9 +139,7 @@ export default function SkyeNewsBE() {
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
-                      <FaCss3Alt size={"2em"} />
-                    </Button>
+                    <Button className={"text-2xl"}>ST</Button>
                   </HoverCard.Target>
                   <HoverCard.Dropdown>
                     <Text size="sm">
@@ -154,7 +157,7 @@ export default function SkyeNewsBE() {
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
                     <Button className={"text-xl"}>
-                      <FaCss3Alt size={"2em"} />
+                      <DiPostgresql size={"2em"} />
                     </Button>
                   </HoverCard.Target>
                   <HoverCard.Dropdown>
@@ -172,7 +175,7 @@ export default function SkyeNewsBE() {
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
                     <Button className={"text-xl"}>
-                      <FaCss3Alt size={"2em"} />
+                      <AiOutlineConsoleSql size={"2em"} />
                     </Button>
                   </HoverCard.Target>
                   <HoverCard.Dropdown>
