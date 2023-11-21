@@ -15,8 +15,8 @@ import skyeBE from "../../assets/skyenewsbe.png";
 export default function SkyeNewsBE() {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div>
-      <ScrollArea className={"bg-white"}>
+    <div className={"bg-blue-50"} style={{ height: "100%" }}>
+      <ScrollArea className={"bg-blue-50"}>
         <section>
           <h2 className={"text-center text-4xl font-bold"}>
             Skye News BE - REST API
