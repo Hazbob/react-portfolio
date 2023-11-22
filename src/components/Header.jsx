@@ -1,7 +1,7 @@
 import Harry from "../assets/harry.jpg";
 export default function Header() {
   return (
-    <header className="flex flex-col mx-auto w-5/6 items-center py-20 py-5 gap-4 ">
+    <header className="flex flex-col mx-auto w-5/6 items-center py-20  gap-4 ">
       <img
         className={
           "w-1/3 md:w-1/2 rounded-full drop-shadow  md:top-0 md:right-0  md:w-2/12"

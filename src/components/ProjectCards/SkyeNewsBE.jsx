@@ -189,63 +189,8 @@ export default function SkyeNewsBE() {
               </Group>
             </section>
           </div>
-          <Button
-            className={"rounded-none flex"}
-            onClick={() => setShowMore(!showMore)}
-            fullWidth
-          >
-            Toggle More Info!
-            <GiClick />
-          </Button>
-          {showMore && (
-            <div className={"w-100% md:flex bg-lime-100 "}>
-              <div className={"w-full md:w-1/2"}>
-                <h2 className={"font-bold"}>Features:</h2>
-                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                  <li>
-                    <span className={"font-bold"}>1.</span> Get Requests for
-                    articles, comments and likes.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>2.</span> Post Request for
-                    comments.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>3.</span> Update/Patch
-                    requests for likes.
-                  </li>{" "}
-                  <li>
-                    <span className={"font-bold"}>4.</span>Delete requests for
-                    comments.
-                  </li>{" "}
-                  <li>
-                    <span className={"font-bold"}>5.</span>Tested thoroughly
-                    with Jest and Supertest.
-                  </li>
-                </ol>
-              </div>
-
-              <div>
-                <h2 className={"font-bold"}>Key Learnings:</h2>
-                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                  <li>
-                    <span className={"font-bold"}>1.</span> Testing really makes
-                    your life easier when you are 100% confident in the,
-                    input/output.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>2.</span> Putting more time
-                    intp setup from the beginning enables greater developer
-                    experience down the line. For example using routers, from
-                    the start instead of adding later on.
-                  </li>
-                </ol>
-              </div>
-            </div>
-          )}
         </section>
       </ScrollArea>
-      <div className={"h-20 sm:h-0"}></div>
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function TrippyCard() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div style={{ height: "80vh" }}>
+    <div>
       <ScrollArea className={"bg-blue-50"}>
         <section>
           <h2 className={"text-center text-4xl font-bold"}>
@@ -55,7 +55,7 @@ export default function TrippyCard() {
             allowFullScreen
             title="Embedded youtube"
           />
-          <h1 className={"text-center font-bold"}>Stack</h1>
+          <h1 className={"text-center font-bold"}>The Stack</h1>
           <div
             className={
               "grid grid-cols-2 xl:w-5/6 gap-4  md:border-4 border-sky-500 p-5 rounded-md my-1 mx-auto "
@@ -144,72 +144,8 @@ export default function TrippyCard() {
               </Group>
             </section>
           </div>
-          <Button
-            className={"rounded-none flex"}
-            onClick={() => setShowMore(!showMore)}
-            fullWidth
-          >
-            Toggle More Info!
-            <GiClick />
-          </Button>
-          {showMore && (
-            <div className={"w-100% md:flex bg-lime-100 "}>
-              <div className={"w-full md:w-1/2"}>
-                <h2 className={"font-bold"}>Features:</h2>
-                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                  <li>
-                    <span className={"font-bold"}>1.</span> Teacher can create a
-                    trip, invite students to that trip and plan the trip while
-                    keeping students and parents updated.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>2.</span> Teacher can edit
-                    trip details.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>3.</span> Teacher can scan QR
-                    code generated on students phones to register them, while
-                    seeing a list of the missing students.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>4.</span> Teacher can place
-                    meeting points on a map, that is then rendered in the
-                    students accounts so they can see where to meetup.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>5.</span> Student can see an
-                    inventory list for the trip and the info of the trip to plan
-                    ahead
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>6.</span> Parents can see the
-                    price of the trip, location, and inventory of ONLY the trips
-                    their child is invited on
-                  </li>
-                </ol>
-              </div>
-              <div>
-                <h2 className={"font-bold"}>Key Learnings:</h2>
-                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                  <li>
-                    <span className={"font-bold"}>1.</span> Spend more time
-                    deciding on SQL or No SQL.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>2.</span> If communication is
-                    lacking, organise more huddles.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>3.</span> Reader mode on
-                    browsers makes docs a lot more digestible and memorable.
-                  </li>
-                </ol>
-              </div>
-            </div>
-          )}
         </section>
       </ScrollArea>
-      <div className={"h-20 sm:h-0"}></div>
     </div>
   );
 }

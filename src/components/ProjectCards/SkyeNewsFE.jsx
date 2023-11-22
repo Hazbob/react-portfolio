@@ -130,50 +130,6 @@ export default function SkyeNewsFE() {
               </Group>
             </section>
           </div>
-          <Button
-            className={"rounded-none flex"}
-            onClick={() => setShowMore(!showMore)}
-            fullWidth
-          >
-            Toggle More Info!
-            <GiClick />
-          </Button>
-          {showMore && (
-            <div className={"w-100% md:flex bg-lime-100 "}>
-              <div className={"w-full md:w-1/2"}>
-                <h2 className={"font-bold"}>Features:</h2>
-                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                  <li>
-                    <span className={"font-bold"}>1.</span> Read Articles Loaded
-                    From API.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>2.</span> Post comments on an
-                    article.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>3.</span> upvote or downvote
-                    an article.
-                  </li>
-                </ol>
-              </div>
-
-              <div>
-                <h2 className={"font-bold"}>Key Learnings:</h2>
-                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                  <li>
-                    <span className={"font-bold"}>1.</span> Dont Obsess over
-                    styling, just get the functionality and perfect later
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>2.</span> Make sure to plan
-                    breaks when working solo as to not sit with a problem,
-                    instead come back with fresh eyes.
-                  </li>
-                </ol>
-              </div>
-            </div>
-          )}
         </section>
       </ScrollArea>
       <div className={"h-20 sm:h-0"}></div>
