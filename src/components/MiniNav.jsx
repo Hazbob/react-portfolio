@@ -7,14 +7,14 @@ import { GiBrain } from "react-icons/gi";
 export default function MiniNav() {
   return (
     <nav className={"w-full my-5 p-1"}>
-      <ul className={"w-full grid grid-cols-5 gap-4"}>
+      <ul className={"w-full grid grid-cols-5 gap-1"}>
         <Link to={"/"}>
           <li
             className={
               "bg-lime-200 flex-grow flex  flex-col items-center  rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2"
             }
           >
-            <FaHome size={"3em"} />
+            <FaHome size={"2em"} />
             Home
           </li>
         </Link>
@@ -24,7 +24,7 @@ export default function MiniNav() {
               "bg-blue-300 flex-grow flex flex-col items-center rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2"
             }
           >
-            <GiBrain size={"3em"} />
+            <GiBrain size={"2em"} />
             Skills
           </li>
         </Link>
@@ -34,7 +34,7 @@ export default function MiniNav() {
               "bg-fuchsia-200 flex-grow flex flex-col items-center rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2"
             }
           >
-            <FaCode size={"3em"} />
+            <FaCode size={"2em"} />
             Projects
           </li>
         </Link>
@@ -44,7 +44,7 @@ export default function MiniNav() {
               "bg-emerald-200 flex-grow flex flex-col items-center rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2"
             }
           >
-            <FaInfoCircle size={"3em"} />
+            <FaInfoCircle size={"2em"} />
             About
           </li>
         </Link>
@@ -54,7 +54,7 @@ export default function MiniNav() {
               "bg-violet-300 flex-grow flex flex-col items-center rounded-md border-2 border-transparent hover:cursor-pointer hover:border-blue-700 hover:border-2"
             }
           >
-            <RiContactsFill size={"3em"} />
+            <RiContactsFill size={"2em"} />
             Contact
           </li>
         </Link>

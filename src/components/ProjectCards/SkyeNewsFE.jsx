@@ -10,6 +10,7 @@ import { GiClick } from "react-icons/gi";
 
 import skye from "../../assets/skyenews.png";
 import { useState } from "react";
+import Footer from "../Footer.jsx";
 export default function SkyeNewsFE() {
   const [showMore, setShowMore] = useState(false);
   return (
@@ -20,7 +21,7 @@ export default function SkyeNewsFE() {
             Skye News FE - News Web App
           </h2>
           <h3 className={"text-center my-4"}>
-            News Website Crafted In React and Hydrated with custom built API
+            News Website Crafted In React and Hydrated with a custom built API
           </h3>
           <ul className={"flex items-center justify-center gap-4"}>
             <li>
@@ -175,6 +176,7 @@ export default function SkyeNewsFE() {
           )}
         </section>
       </ScrollArea>
+      <div className={"h-20 sm:h-0"}></div>
     </div>
   );
 }

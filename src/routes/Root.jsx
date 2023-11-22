@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "@mantine/carousel/styles.css";
 import MiniNav from "../components/MiniNav.jsx";
+import Footer from "../components/Footer.jsx";
 
 export default function Root() {
   return (

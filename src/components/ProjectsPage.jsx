@@ -4,6 +4,7 @@ import { Button } from "@mantine/core";
 import MiniNav from "./MiniNav.jsx";
 import SkyeNewsFE from "./ProjectCards/SkyeNewsFE.jsx";
 import SkyeNewsBE from "./ProjectCards/SkyeNewsBE.jsx";
+import Footer from "./Footer.jsx";
 export default function ProjectsPage() {
   const [curProject, setProject] = useState("trippy");
 

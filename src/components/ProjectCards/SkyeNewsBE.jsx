@@ -16,6 +16,7 @@ import { FaNode } from "react-icons/fa";
 import { WiTrain } from "react-icons/wi";
 import { DiPostgresql } from "react-icons/di";
 import { AiOutlineConsoleSql } from "react-icons/ai";
+import Footer from "../Footer.jsx";
 
 export default function SkyeNewsBE() {
   const [showMore, setShowMore] = useState(false);
@@ -52,7 +53,7 @@ export default function SkyeNewsBE() {
           </ul>
           <img
             loading={"lazy"}
-            className={"w-10/12 mx-auto md:w-2/5"}
+            className={"w-10/12 mx-auto md:w-3/5"}
             src={skyeBE}
             alt="screenshot of Skye News Backend Code"
           />
@@ -202,16 +203,24 @@ export default function SkyeNewsBE() {
                 <h2 className={"font-bold"}>Features:</h2>
                 <ol className={"bg-lime-100 flex-col flex gap-4 "}>
                   <li>
-                    <span className={"font-bold"}>1.</span> Read Articles Loaded
-                    From API.
+                    <span className={"font-bold"}>1.</span> Get Requests for
+                    articles, comments and likes.
                   </li>
                   <li>
-                    <span className={"font-bold"}>2.</span> Post comments on an
-                    article.
+                    <span className={"font-bold"}>2.</span> Post Request for
+                    comments.
                   </li>
                   <li>
-                    <span className={"font-bold"}>3.</span> upvote or downvote
-                    an article.
+                    <span className={"font-bold"}>3.</span> Update/Patch
+                    requests for likes.
+                  </li>{" "}
+                  <li>
+                    <span className={"font-bold"}>4.</span>Delete requests for
+                    comments.
+                  </li>{" "}
+                  <li>
+                    <span className={"font-bold"}>5.</span>Tested thoroughly
+                    with Jest and Supertest.
                   </li>
                 </ol>
               </div>
@@ -220,13 +229,15 @@ export default function SkyeNewsBE() {
                 <h2 className={"font-bold"}>Key Learnings:</h2>
                 <ol className={"bg-lime-100 flex-col flex gap-4 "}>
                   <li>
-                    <span className={"font-bold"}>1.</span> Dont Obsess over
-                    styling, just get the functionality and perfect later
+                    <span className={"font-bold"}>1.</span> Testing really makes
+                    your life easier when you are 100% confident in the,
+                    input/output.
                   </li>
                   <li>
-                    <span className={"font-bold"}>2.</span> Make sure to plan
-                    breaks when working solo as to not sit with a problem,
-                    instead come back with fresh eyes.
+                    <span className={"font-bold"}>2.</span> Putting more time
+                    intp setup from the beginning enables greater developer
+                    experience down the line. For example using routers, from
+                    the start instead of adding later on.
                   </li>
                 </ol>
               </div>
@@ -234,6 +245,7 @@ export default function SkyeNewsBE() {
           )}
         </section>
       </ScrollArea>
+      <div className={"h-20 sm:h-0"}></div>
     </div>
   );
 }

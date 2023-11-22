@@ -8,6 +8,7 @@ import { FaGithub, FaYoutube } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { GiClick } from "react-icons/gi";
 import { useState } from "react";
+import Footer from "../Footer.jsx";
 
 export default function TrippyCard() {
   const [opened, { open, close }] = useDisclosure(false);
@@ -208,6 +209,7 @@ export default function TrippyCard() {
           )}
         </section>
       </ScrollArea>
+      <div className={"h-20 sm:h-0"}></div>
     </div>
   );
 }

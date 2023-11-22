@@ -2,16 +2,16 @@ import { useState } from "react";
 import AppContainer from "./components/AppContainer.jsx";
 import "./App.css";
 import Header from "./components/Header.jsx";
-import '@mantine/carousel/styles.css';
+import "@mantine/carousel/styles.css";
+import "dotenv/config.js";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <AppContainer/>
+      <AppContainer />
     </div>
-
   );
 }
 
