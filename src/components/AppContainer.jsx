@@ -1,15 +1,11 @@
 import Header from "./Header.jsx";
-import SkillsContainer from "./SkillsContainer.jsx";
-import HomeNavBar from "./HomeNavBar.jsx";
+
+import Footer from "./Footer.jsx";
 
 export default function AppContainer() {
   return (
-    <div
-      style={{ height: "100vh" }}
-      className={"flex items-center justify-center flex-col"}
-    >
+    <div className={"flex items-center justify-center flex-col h-full"}>
       <Header />
-      <HomeNavBar />
     </div>
   );
 }

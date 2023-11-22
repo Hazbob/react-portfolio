@@ -11,7 +11,7 @@ import AppContainer from "./components/AppContainer.jsx";
 import ErrorPage from "./error-page.jsx";
 import SkillsContainer from "./components/SkillsContainer.jsx";
 import About from "./components/About.jsx";
-
+import Contact from "./components/Contact.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
