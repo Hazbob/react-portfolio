@@ -21,13 +21,13 @@ import Footer from "../Footer.jsx";
 export default function SkyeNewsBE() {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div className={"bg-blue-50"} style={{ height: "100%" }}>
-      <ScrollArea className={"bg-blue-50"}>
+    <div style={{ height: "100%", backgroundColor: "#0A1A2F" }}>
+      <ScrollArea>
         <section>
-          <h2 className={"text-center text-4xl font-bold"}>
+          <h2 className={"text-center text-4xl font-bold text-blue-200"}>
             Skye News BE - REST API
           </h2>
-          <h3 className={"text-center my-4"}>
+          <h3 className={"text-center my-4 text-blue-200"}>
             Custom built REST api - bespoke for Skye News
           </h3>
           <ul className={"flex items-center justify-center gap-4"}>
@@ -37,7 +37,8 @@ export default function SkyeNewsBE() {
                 target={"_blank"}
                 href="https://github.com/Hazbob/be-nc-news"
               >
-                <FaGithub size={"2.5em"} /> <FaExternalLinkAlt />
+                <FaGithub color={"white"} size={"2.5em"} />{" "}
+                <FaExternalLinkAlt color={"white"} />
               </a>
             </li>
             <li>
@@ -46,8 +47,8 @@ export default function SkyeNewsBE() {
                 target={"_blank"}
                 href="https://be-northcoder-news.onrender.com/api/articles"
               >
-                <TbWorldWww size={"3em"} />
-                <FaExternalLinkAlt />
+                <TbWorldWww color={"white"} size={"3em"} />
+                <FaExternalLinkAlt color={"white"} />
               </a>
             </li>
           </ul>
@@ -57,19 +58,23 @@ export default function SkyeNewsBE() {
             src={skyeBE}
             alt="screenshot of Skye News Backend Code"
           />
-          <h1 className={"text-center font-bold"}>Stack</h1>
+          <h1 className={"text-center font-bold text-blue-200 text-blue-200"}>
+            Stack
+          </h1>
           <div
             className={
-              "grid grid-cols-2 md:grid-cols-4 xl:w-5/6 gap-4  md:border-4 border-sky-500 p-5 rounded-md my-1 mx-auto "
+              "grid grid-cols-2 md:grid-cols-4 xl:w-5/6 gap-4   p-5 rounded-md my-1 mx-auto "
             }
           >
             <section>
-              <h3 className="text-sm text-center">JavaScript</h3>
+              <h3 className="text-sm text-center text-emerald-300">
+                JavaScript
+              </h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <IoLogoJavascript size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -80,12 +85,12 @@ export default function SkyeNewsBE() {
               </Group>
             </section>
             <section>
-              <h3 className="text-sm text-center">Node</h3>
+              <h3 className="text-sm text-center text-emerald-300">Node</h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <FaNode size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -100,12 +105,12 @@ export default function SkyeNewsBE() {
               </Group>
             </section>
             <section>
-              <h3 className="text-sm text-center">Express</h3>
+              <h3 className="text-sm text-center text-emerald-300">Express</h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <WiTrain size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -116,12 +121,12 @@ export default function SkyeNewsBE() {
               </Group>
             </section>
             <section>
-              <h3 className="text-sm text-center">Jest</h3>
+              <h3 className="text-sm text-center text-emerald-300">Jest</h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <SiJest size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -135,12 +140,16 @@ export default function SkyeNewsBE() {
               </Group>
             </section>{" "}
             <section>
-              <h3 className="text-sm text-center">Supertest</h3>
+              <h3 className="text-sm text-center text-emerald-300">
+                Supertest
+              </h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-2xl"}>ST</Button>
+                    <Button color={"dark-blue"} className={"text-2xl"}>
+                      ST
+                    </Button>
                   </HoverCard.Target>
                   <HoverCard.Dropdown>
                     <Text size="sm">
@@ -152,12 +161,14 @@ export default function SkyeNewsBE() {
               </Group>
             </section>{" "}
             <section>
-              <h3 className="text-sm text-center">PostgreSQL</h3>
+              <h3 className="text-sm text-center text-emerald-300">
+                PostgreSQL
+              </h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <DiPostgresql size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -170,12 +181,12 @@ export default function SkyeNewsBE() {
               </Group>
             </section>{" "}
             <section>
-              <h3 className="text-sm text-center">SQL</h3>
+              <h3 className="text-sm text-center text-emerald-300">SQL</h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <AiOutlineConsoleSql size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -189,60 +200,6 @@ export default function SkyeNewsBE() {
               </Group>
             </section>
           </div>
-          <Button
-            className={"rounded-none flex"}
-            onClick={() => setShowMore(!showMore)}
-            fullWidth
-          >
-            Toggle More Info!
-            <GiClick />
-          </Button>
-          {showMore && (
-            <div className={"w-100% md:flex bg-lime-100 "}>
-              <div className={"w-full md:w-1/2"}>
-                <h2 className={"font-bold"}>Features:</h2>
-                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                  <li>
-                    <span className={"font-bold"}>1.</span> Get Requests for
-                    articles, comments and likes.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>2.</span> Post Request for
-                    comments.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>3.</span> Update/Patch
-                    requests for likes.
-                  </li>{" "}
-                  <li>
-                    <span className={"font-bold"}>4.</span>Delete requests for
-                    comments.
-                  </li>{" "}
-                  <li>
-                    <span className={"font-bold"}>5.</span>Tested thoroughly
-                    with Jest and Supertest.
-                  </li>
-                </ol>
-              </div>
-
-              <div>
-                <h2 className={"font-bold"}>Key Learnings:</h2>
-                <ol className={"bg-lime-100 flex-col flex gap-4 "}>
-                  <li>
-                    <span className={"font-bold"}>1.</span> Testing really makes
-                    your life easier when you are 100% confident in the,
-                    input/output.
-                  </li>
-                  <li>
-                    <span className={"font-bold"}>2.</span> Putting more time
-                    intp setup from the beginning enables greater developer
-                    experience down the line. For example using routers, from
-                    the start instead of adding later on.
-                  </li>
-                </ol>
-              </div>
-            </div>
-          )}
         </section>
       </ScrollArea>
       <div className={"h-20 sm:h-0"}></div>

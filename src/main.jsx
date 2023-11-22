@@ -7,11 +7,11 @@ import { MantineProvider, createTheme } from "@mantine/core";
 import ProjectsPage from "./components/ProjectsPage.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AppContainer from "./components/AppContainer.jsx";
 import ErrorPage from "./error-page.jsx";
 import SkillsContainer from "./components/SkillsContainer.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
+import Header from "./components/Header.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,19 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <AppContainer />,
-      },
-      {
-        path: "/projects",
-        element: <ProjectsPage />,
-      },
-      {
-        path: "/skills",
-        element: <SkillsContainer />,
-      },
-      {
-        path: "/about",
-        element: <About />,
+        element: <Header />,
       },
       {
         path: "/contact",
@@ -41,7 +29,36 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-const theme = createTheme({});
+const theme = createTheme({
+  colors: {
+    "dark-blue": [
+      "#8992B0",
+      "#8992B0",
+      "#8992B0",
+      "#8992B0",
+      "#8992B0",
+      "#8992B0",
+      "#8992B0",
+      "#8992B0",
+      "#8992B0",
+      "#8992B0",
+    ],
+    "minecraft-green": [
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+      "#6EE7B7",
+    ],
+  },
+});
 ReactDOM.createRoot(document.getElementById("root")).render(
   <MantineProvider theme={theme}>
     <React.StrictMode>
