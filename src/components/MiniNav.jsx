@@ -6,7 +6,7 @@ export default function MiniNav() {
 
   if (location.pathname === "/contact") return;
   return (
-    <nav className={"w-fit inline-block fixed top-0 right-0 z-50 "}>
+    <nav className={"w-fit inline-block fixed top-0 right-10 md:right-2 z-50 "}>
       <ul
         style={{ backgroundColor: "#0A1A2F" }}
         className={"flex justify-centert  md:justify-end gap-4 "}
