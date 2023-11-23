@@ -4,12 +4,9 @@ import Root from "./routes/Root.jsx";
 import "./index.css";
 import "@mantine/core/styles.css";
 import { MantineProvider, createTheme } from "@mantine/core";
-import ProjectsPage from "./components/ProjectsPage.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page.jsx";
-import SkillsContainer from "./components/SkillsContainer.jsx";
-import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import Header from "./components/Header.jsx";
 const router = createBrowserRouter([
