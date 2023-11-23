@@ -15,12 +15,12 @@ export default function SkyeNewsFE() {
   const [showMore, setShowMore] = useState(false);
   return (
     <div style={{ height: "80vh" }}>
-      <ScrollArea className={"bg-blue-50"}>
+      <ScrollArea style={{ backgroundColor: "#0A1A2F" }}>
         <section>
-          <h2 className={"text-center text-4xl font-bold"}>
+          <h2 className={"text-center text-4xl font-bold text-blue-200"}>
             Skye News FE - News Web App
           </h2>
-          <h3 className={"text-center my-4"}>
+          <h3 className={"text-center my-4 text-blue-200"}>
             News Website Crafted In React and Hydrated with a custom built API
           </h3>
           <ul className={"flex items-center justify-center gap-4"}>
@@ -30,7 +30,12 @@ export default function SkyeNewsFE() {
                 target={"_blank"}
                 href="https://github.com/Hazbob/NC-News"
               >
-                <FaGithub size={"2.5em"} /> <FaExternalLinkAlt />
+                <FaGithub
+                  size={"2.5em"}
+                  color={"#6EE7B7"}
+                  aria-label={"hyper link to github repo"}
+                />
+                <FaExternalLinkAlt color={"#6EE7B7"} />
               </a>
             </li>
             <li>
@@ -39,30 +44,38 @@ export default function SkyeNewsFE() {
                 target={"_blank"}
                 href="https://skyenews.netlify.app/"
               >
-                <TbWorldWww size={"3em"} />
-                <FaExternalLinkAlt />
+                <TbWorldWww
+                  color={"#6EE7B7"}
+                  size={"3em"}
+                  aria-label={"hyperlink to hosted news site"}
+                />
+                <FaExternalLinkAlt color={"#6EE7B7"} />
               </a>
             </li>
           </ul>
+
           <img
             loading={"lazy"}
-            className={"w-10/12 mx-auto md:w-3/5"}
+            className={"w-10/12 mx-auto md:w-3/5 "}
             src={skye}
             alt="screenshot of Skye News Homepage"
           />
+
           <h1 className={"text-center font-bold"}>Stack</h1>
           <div
             className={
-              "grid grid-cols-2 xl:w-5/6 gap-4  md:border-4 border-sky-500 p-5 rounded-md my-1 mx-auto "
+              "grid grid-cols-2 xl:w-5/6 gap-4  0 p-5 rounded-md my-1 mx-auto "
             }
           >
             <section>
-              <h3 className="text-sm text-center">JavaScript</h3>
+              <h3 className="text-sm text-center text-emerald-300">
+                JavaScript
+              </h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <IoLogoJavascript size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -75,12 +88,12 @@ export default function SkyeNewsFE() {
               </Group>
             </section>
             <section>
-              <h3 className="text-sm text-center">React</h3>
+              <h3 className="text-sm text-center text-emerald-300">React</h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <FaReact size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -95,12 +108,12 @@ export default function SkyeNewsFE() {
               </Group>
             </section>
             <section>
-              <h3 className="text-sm text-center">Axios</h3>
+              <h3 className="text-sm text-center text-emerald-300">Axios</h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <SiAxios size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -111,12 +124,12 @@ export default function SkyeNewsFE() {
               </Group>
             </section>
             <section>
-              <h3 className="text-sm text-center">CSS</h3>
+              <h3 className="text-sm text-center text-emerald-300 ">CSS</h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <FaCss3Alt size={"2em"} />
                     </Button>
                   </HoverCard.Target>

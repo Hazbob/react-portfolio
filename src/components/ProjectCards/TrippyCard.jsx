@@ -15,13 +15,13 @@ export default function TrippyCard() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div>
-      <ScrollArea className={"bg-blue-50"}>
+    <div style={{ height: "80vh" }}>
+      <ScrollArea style={{ backgroundColor: "#0A1A2F" }}>
         <section>
-          <h2 className={"text-center text-4xl font-bold"}>
+          <h2 className={"text-center text-4xl font-bold text-blue-200  "}>
             Trippy - Mobile App
           </h2>
-          <h3 className={"text-center my-4"}>
+          <h3 className={"text-center my-4 text-blue-200"}>
             Mobile App to streamline the school trip planning process
           </h3>
           <ul className={"flex items-center justify-center gap-4"}>
@@ -31,7 +31,12 @@ export default function TrippyCard() {
                 target={"_blank"}
                 href="https://github.com/Proc31/trippy"
               >
-                <FaGithub size={"2.5em"} /> <FaExternalLinkAlt />
+                <FaGithub
+                  color={"#6EE7B7"}
+                  size={"2.5em"}
+                  aria-label={"link to github repo"}
+                />
+                <FaExternalLinkAlt color={"#6EE7B7"} />
               </a>
             </li>
             <li>
@@ -40,8 +45,13 @@ export default function TrippyCard() {
                 target={"_blank"}
                 href="https://drive.google.com/file/d/1lkQValjrpJz1FaR7r5l0nCFLCkQP7kbu/view?usp=sharing"
               >
-                <FaYoutube size={"3em"} />
-                <FaExternalLinkAlt />
+                <FaYoutube color={"#6EE7B7"} size={"3em"} />
+                <FaExternalLinkAlt
+                  color={"#6EE7B7"}
+                  aria-label={
+                    "link to video where me and my team runs through the whole app"
+                  }
+                />
               </a>
             </li>
           </ul>
@@ -50,24 +60,25 @@ export default function TrippyCard() {
             width="80%"
             height="400"
             src={`https://www.youtube.com/embed/usUjBZ9Afok`}
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Embedded youtube"
           />
-          <h1 className={"text-center font-bold"}>The Stack</h1>
+          <h1 className={"text-center font-bold text-blue-200"}>Stack</h1>
           <div
             className={
-              "grid grid-cols-2 xl:w-5/6 gap-4  md:border-4 border-sky-500 p-5 rounded-md my-1 mx-auto "
+              "grid grid-cols-2 xl:w-5/6 gap-4   p-5 rounded-md my-1 mx-auto "
             }
           >
             <section>
-              <h3 className="text-sm text-center">React Native</h3>
+              <h3 className="text-sm text-center text-emerald-300">
+                React Native
+              </h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <TbBrandReactNative size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -81,12 +92,14 @@ export default function TrippyCard() {
               </Group>
             </section>
             <section>
-              <h3 className="text-sm text-center">Firebase Realtime</h3>
+              <h3 className="text-sm text-center text-emerald-300">
+                Firebase Realtime
+              </h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <IoLogoFirebase size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -101,12 +114,12 @@ export default function TrippyCard() {
               </Group>
             </section>
             <section>
-              <h3 className="text-sm text-center">Expo GO</h3>
+              <h3 className="text-sm text-center text-emerald-300">Expo GO</h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <SiExpo size={"2em"} />
                     </Button>
                   </HoverCard.Target>
@@ -122,12 +135,14 @@ export default function TrippyCard() {
               </Group>
             </section>
             <section>
-              <h3 className="text-sm text-center">TypeScript</h3>
+              <h3 className="text-sm text-center text-emerald-300">
+                TypeScript
+              </h3>
 
               <Group justify="center">
                 <HoverCard width={280} shadow="md">
                   <HoverCard.Target>
-                    <Button className={"text-xl"}>
+                    <Button color={"dark-blue"} className={"text-xl"}>
                       <SiTypescript size={"2em"} />
                     </Button>
                   </HoverCard.Target>

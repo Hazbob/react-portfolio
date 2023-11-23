@@ -12,19 +12,23 @@ import MiniNav from "./MiniNav.jsx";
 
 export default function SkillsContainer() {
   return (
-    <div>
-      <h1 className={"text-3xl text-center my-2 xl:text-4xl  xl:my-4"}>
-        My Skills
-      </h1>
-      <p className={"text-center"}>Hover/tap for more info!</p>
-      <div className="grid grid-cols-4 xl:w-5/6 gap-4  md:border-4 border-sky-500 p-5 rounded-md my-10 mx-auto ">
+    <div id={"skills"} className={"w-screen px-5 mt-10"}>
+      <h1 className={"text-emerald-300 text-2xl"}>My Skills ___</h1>
+
+      <p className="text-xl xl:text-2xl  text-blue-200 md:text-6xl ">
+        Hover/tap for more info!
+      </p>
+      <div className="grid grid-cols-4 xl:w-5/6 gap-4     rounded-md my-10 mx-auto ">
         <section>
-          <h3 className="text-center">JavaScript</h3>
+          <h3 className="text-center text-emerald-300">JavaScript</h3>
 
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <IoLogoJavascript size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -38,11 +42,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">React</h3>
+          <h3 className="text-center text-emerald-300">React</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <FaReact size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -55,11 +62,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">HTML</h3>
+          <h3 className="text-center text-emerald-300">HTML</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <FaHtml5 size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -73,11 +83,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">CSS</h3>
+          <h3 className="text-center text-emerald-300">CSS</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <FaCss3Alt size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -92,11 +105,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">Node</h3>
+          <h3 className="text-center text-emerald-300">Node</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <FaNode size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -111,11 +127,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">Express</h3>
+          <h3 className="text-center text-emerald-300">Express</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <WiTrain size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -130,11 +149,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">SQL</h3>
+          <h3 className="text-center text-emerald-300">SQL</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <AiOutlineConsoleSql size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -148,11 +170,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">Postgres</h3>
+          <h3 className="text-center text-emerald-300">Postgres</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <DiPostgresql size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -166,11 +191,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">Firebase</h3>
+          <h3 className="text-center text-emerald-300">Firebase</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <IoLogoFirebase size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -185,11 +213,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">Testing</h3>
+          <h3 className="text-center text-emerald-300">Testing</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <LuTestTubes size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -203,11 +234,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">Tailwind</h3>
+          <h3 className="text-center text-emerald-300">Tailwind</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <SiTailwindcss size="2em" />
                 </Button>
               </HoverCard.Target>
@@ -222,11 +256,14 @@ export default function SkillsContainer() {
           </Group>
         </section>
         <section>
-          <h3 className="text-center">Github</h3>
+          <h3 className="text-center text-emerald-300">Github</h3>
           <Group justify="center">
             <HoverCard width={280} shadow="md">
               <HoverCard.Target>
-                <Button style={{ height: "5rem", width: "5rem" }}>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
                   <FaGithub size="2em" />
                 </Button>
               </HoverCard.Target>

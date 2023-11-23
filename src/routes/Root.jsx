@@ -6,8 +6,11 @@ import Footer from "../components/Footer.jsx";
 export default function Root() {
   return (
     <>
-      <div className=" flex items-center justify-center h-full">
-        <div className="w-11/12 h-full bg-blue-50 mx-auto rounded-md ">
+      <div
+        style={{ backgroundColor: "#0A1A2F" }}
+        className=" flex items-center justify-center h-full"
+      >
+        <div style={{ backgroundColor: "#0A1A2F" }} className="w-screen ">
           <MiniNav />
           <Outlet />
         </div>

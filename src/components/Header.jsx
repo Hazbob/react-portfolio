@@ -1,21 +1,67 @@
-import Harry from "../assets/harry.jpg";
+import SkillsContainer from "./SkillsContainer.jsx";
+import ProjectsPage from "./ProjectsPage.jsx";
+import { FaArrowUp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
+import Footer from "./Footer.jsx";
+import About from "./About.jsx";
 export default function Header() {
   return (
-    <header className="flex flex-col mx-auto w-5/6 items-center py-20  gap-4 ">
-      <img
+    <div>
+      <header
+        id={"home"}
+        style={{ backgroundColor: "#0A1A2F" }}
+        className="flex flex-col w-screen px-5 py-20 gap-4 md:gap-10 h-screen justify-center "
+      >
+        <h3 className="text-emerald-300">Hi, my name is</h3>
+        <h1 className="text-4xl xl:text-5xl font-bold text-blue-200 md:text-7xl ">
+          Harry Robinson.
+        </h1>
+        <h2
+          style={{ color: "#8992B0", fontWeight: "bold" }}
+          className="my-1 text-4xl md:text-7xl"
+        >
+          I'm a Junior Software Engineer.
+        </h2>
+        <p style={{ color: "#8992B0" }} className={"w-full md:w-2/3"}>
+          I’m a software engineer specializing in full stack development,
+          allowing for me to build stunning digital experiences from the ground
+          up.
+        </p>
+        <a
+          className={
+            "text-emerald-300 h-fit border-2 border-emerald-300 text-center w-60 py-5"
+          }
+          href={"https://rose-deanne-43.tiiny.site/"}
+          target={"_blank"}
+        >
+          Checkout my resume!
+        </a>
+        <Footer />
+      </header>
+      <About />
+      <SkillsContainer />
+      <ProjectsPage />
+      <a
         className={
-          "w-1/3 md:w-1/2 rounded-full drop-shadow  md:top-0 md:right-0  md:w-2/12"
+          "flex-col justify-center items-center z-20 fixed md:w-40 md:h-20 bg-transparent border-2 border-emerald-300 text-xl bottom-5 text-white left-4 rounded-full text-center flex"
         }
-        src={Harry}
-        alt="image of me"
-      />
-      <h2 className="text-2xl  xl:text-5xl font-bold  xl:my-5">
-        Hi, I'm Harry, and i'm a...
-      </h2>
-      <h1 className="text-3xl text-center  xl:text-5xl font-bold  text-violet-700">
-        Software Developer
-      </h1>
-      <p className="my-1 text-2xl text-center">Based in Manchester.</p>
-    </header>
+        href="#home"
+      >
+        <FaArrowUp color={"#6EE7B7"} size={"1.5em"} />
+        <h1 className={"text-emerald-300 hidden md:grid"}>Top</h1>
+      </a>
+
+      <Link
+        to={"/contact"}
+        className={
+          "flex-col justify-center items-center z-20 fixed md:w-40 md:h-20 bg-transparent border-2 border-emerald-300 text-xl bottom-5 text-white right-9 md:right-4 rounded-full text-center flex"
+        }
+        href="#home"
+      >
+        <MdEmail color={"#6EE7B7"} size={"1.5em"} />
+        <h1 className={"text-emerald-300 hidden md:grid"}>contact</h1>
+      </Link>
+    </div>
   );
 }
