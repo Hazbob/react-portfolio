@@ -12,10 +12,9 @@ import MiniNav from "./MiniNav.jsx";
 
 export default function SkillsContainer() {
   return (
-    <div id={"skills"} className={"w-screen px-5"}>
-      <h1 className="text-4xl xl:text-5xl font-bold text-blue-200 md:text-6xl ">
-        My Skills
-      </h1>
+    <div id={"skills"} className={"w-screen px-5 mt-10"}>
+      <h1 className={"text-emerald-300 text-2xl"}>My Skills ___</h1>
+
       <p className="text-xl xl:text-2xl  text-blue-200 md:text-6xl ">
         Hover/tap for more info!
       </p>

@@ -32,11 +32,11 @@ export default function TrippyCard() {
                 href="https://github.com/Proc31/trippy"
               >
                 <FaGithub
-                  color={"white"}
+                  color={"#6EE7B7"}
                   size={"2.5em"}
                   aria-label={"link to github repo"}
                 />
-                <FaExternalLinkAlt color={"white"} />
+                <FaExternalLinkAlt color={"#6EE7B7"} />
               </a>
             </li>
             <li>
@@ -45,9 +45,9 @@ export default function TrippyCard() {
                 target={"_blank"}
                 href="https://drive.google.com/file/d/1lkQValjrpJz1FaR7r5l0nCFLCkQP7kbu/view?usp=sharing"
               >
-                <FaYoutube color={"white"} size={"3em"} />
+                <FaYoutube color={"#6EE7B7"} size={"3em"} />
                 <FaExternalLinkAlt
-                  color={"white"}
+                  color={"#6EE7B7"}
                   aria-label={
                     "link to video where me and my team runs through the whole app"
                   }

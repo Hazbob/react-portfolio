@@ -2,12 +2,18 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className={"grid w-full grid-cols-2 bg-gray-600  bottom-0 left-0"}>
-      <a href="">
-        <FaGithub className={"mx-auto"} size={"3em"} color={"white"} />
+    <footer className={"flex w-full gap-4   "}>
+      <a
+        href="https://github.com/Hazbob"
+        aria-label={"Link to my GitHub profile"}
+      >
+        <FaGithub className={"mx-auto"} size={"2.5em"} color={"#6EE7B7"} />
       </a>
-      <a href="">
-        <FaLinkedin className={"mx-auto"} size={"3em"} color={"white"} />
+      <a
+        href="https://www.linkedin.com/in/harry-robinson-8484bb187/"
+        aria-label={"Link to my LinkedIn profile"}
+      >
+        <FaLinkedin className={"mx-auto"} size={"2.5em"} color={"#6EE7B7"} />
       </a>
     </footer>
   );

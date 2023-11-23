@@ -32,10 +32,10 @@ export default function SkyeNewsFE() {
               >
                 <FaGithub
                   size={"2.5em"}
-                  color={"white"}
+                  color={"#6EE7B7"}
                   aria-label={"hyper link to github repo"}
                 />
-                <FaExternalLinkAlt />
+                <FaExternalLinkAlt color={"#6EE7B7"} />
               </a>
             </li>
             <li>
@@ -45,20 +45,22 @@ export default function SkyeNewsFE() {
                 href="https://skyenews.netlify.app/"
               >
                 <TbWorldWww
-                  color={"white"}
+                  color={"#6EE7B7"}
                   size={"3em"}
                   aria-label={"hyperlink to hosted news site"}
                 />
-                <FaExternalLinkAlt color={"white"} />
+                <FaExternalLinkAlt color={"#6EE7B7"} />
               </a>
             </li>
           </ul>
+
           <img
             loading={"lazy"}
-            className={"w-10/12 mx-auto md:w-3/5"}
+            className={"w-10/12 mx-auto md:w-3/5 "}
             src={skye}
             alt="screenshot of Skye News Homepage"
           />
+
           <h1 className={"text-center font-bold"}>Stack</h1>
           <div
             className={

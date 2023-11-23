@@ -11,10 +11,12 @@ export default function ProjectsPage() {
   return (
     <div
       id={"projects"}
-      style={{ backgroundColor: "#0A1A2F" }}
-      className={"bg-blue-50 w-screen h-screen"}
+      style={{ backgroundColor: "#0A1A2F", height: "80vh" }}
+      className={"w-screen  px-5"}
     >
-      <nav className={"flex w-screen px-5"}>
+      <h1 className={"text-emerald-300 text-2xl my-10"}>Projects ___</h1>
+
+      <nav className={"flex w-screen "}>
         <Button.Group color={"dark-blue"}>
           <Button
             onClick={() => setProject("trippy")}

@@ -37,8 +37,8 @@ export default function SkyeNewsBE() {
                 target={"_blank"}
                 href="https://github.com/Hazbob/be-nc-news"
               >
-                <FaGithub color={"white"} size={"2.5em"} />{" "}
-                <FaExternalLinkAlt color={"white"} />
+                <FaGithub color={"#6EE7B7"} size={"2.5em"} />{" "}
+                <FaExternalLinkAlt color={"#6EE7B7"} />
               </a>
             </li>
             <li>
@@ -47,20 +47,20 @@ export default function SkyeNewsBE() {
                 target={"_blank"}
                 href="https://be-northcoder-news.onrender.com/api/articles"
               >
-                <TbWorldWww color={"white"} size={"3em"} />
-                <FaExternalLinkAlt color={"white"} />
+                <TbWorldWww color={"#6EE7B7"} size={"3em"} />
+                <FaExternalLinkAlt color={"#6EE7B7"} />
               </a>
             </li>
           </ul>
+
           <img
             loading={"lazy"}
-            className={"w-10/12 mx-auto md:w-3/5"}
+            className={"w-10/12 mx-auto md:w-3/5  "}
             src={skyeBE}
             alt="screenshot of Skye News Backend Code"
           />
-          <h1 className={"text-center font-bold text-blue-200 text-blue-200"}>
-            Stack
-          </h1>
+
+          <h1 className={"text-center font-bold  text-blue-200"}>Stack</h1>
           <div
             className={
               "grid grid-cols-2 md:grid-cols-4 xl:w-5/6 gap-4   p-5 rounded-md my-1 mx-auto "
