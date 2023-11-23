@@ -202,7 +202,6 @@ export default function SkyeNewsBE() {
           </div>
         </section>
       </ScrollArea>
-      <div className={"h-20 sm:h-0"}></div>
     </div>
   );
 }
