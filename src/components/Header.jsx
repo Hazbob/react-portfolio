@@ -25,7 +25,7 @@ export default function Header() {
         </h2>
         <p style={{ color: "#8992B0" }} className={"w-full md:w-2/3"}>
           I’m a software engineer specializing in full stack development,
-          allowing for me to build stunning digital experiences from the ground
+          allowing me to build stunning digital experiences from the ground
           up.
         </p>
         <a
