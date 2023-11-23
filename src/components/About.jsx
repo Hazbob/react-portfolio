@@ -6,7 +6,7 @@ export default function About() {
     <section>
       <h1 className={"px-5 text-emerald-300 text-2xl"}>About Me ___</h1>
 
-      <main className={"flex flex-col md:grid md:grid-cols-2 px-5"}>
+      <main className={"flex flex-col md:grid md:grid-cols-2 px-5 "}>
         <p className="w-full text-blue-200 md:col-start-1 md: col-end-1 h-fit">
           I love traveling, food, video games, and last but not least, coding.
           I've always wanted to turn a hobby into my job, and most of my
@@ -14,7 +14,7 @@ export default function About() {
           I assumed I could get a job that I could tolerate but not love. So,
           I'm incredibly relieved that I stumbled into coding.
         </p>
-        <p className={"text-blue-200 md:col-start-1 md:row-start-2"}>
+        <p className={"text-blue-200 md:col-start-1 md:row-start-2 py-5"}>
           When i first started coding I engaged in extensive self-learning
           through Udemy courses. Initially, I delved into{" "}
           <span className={"text-emerald-300"}>Python</span> to craft scripts
