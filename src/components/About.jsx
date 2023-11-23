@@ -3,7 +3,7 @@ import { useIntersection } from "@mantine/hooks";
 
 export default function About() {
   return (
-    <section>
+    <section className={"pt-10s"}>
       <h1 className={"px-5 text-emerald-300 text-2xl"}>About Me ___</h1>
 
       <main className={"flex flex-col md:grid md:grid-cols-2 px-5 "}>
