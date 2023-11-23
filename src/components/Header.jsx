@@ -24,13 +24,13 @@ export default function Header() {
           I'm a Junior Software Engineer.
         </h2>
         <p style={{ color: "#8992B0" }} className={"w-full md:w-2/3"}>
-          I’m a software engineer specializing in full stack development,
-          allowing me to build stunning digital experiences from the ground
-          up.
+
+          specializing in full stack development, allowing me to build stunning
+          digital experiences from the ground up.
         </p>
         <a
           className={
-            "text-emerald-300 h-fit border-2 border-emerald-300 text-center w-60 py-5"
+            "text-emerald-300 h-fit border-2 border-emerald-300 text-center w-60 py-5 hover-2"
           }
           href={"https://rose-deanne-43.tiiny.site/"}
           target={"_blank"}
@@ -55,7 +55,7 @@ export default function Header() {
       <Link
         to={"/contact"}
         className={
-          "flex-col justify-center items-center z-20 fixed md:w-40 md:h-20 bg-transparent border-2 border-emerald-300 text-xl bottom-5 text-white right-9 md:right-4 rounded-full text-center flex"
+          "flex-col justify-center items-center z-20 fixed md:w-40 md:h-20 bg-transparent border-2 border-emerald-300 text-xl bottom-5 text-white right-9 md:right-4 rounded-full text-center flex "
         }
         href="#home"
       >
