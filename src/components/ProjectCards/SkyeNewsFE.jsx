@@ -61,7 +61,7 @@ export default function SkyeNewsFE() {
             alt="screenshot of Skye News Homepage"
           />
 
-          <h1 className={"text-center font-bold"}>Stack</h1>
+          <h1 className={"text-center text-blue-200 font-bold"}>Stack</h1>
           <div
             className={
               "grid grid-cols-2 xl:w-5/6 gap-4  0 p-5 rounded-md my-1 mx-auto "
