@@ -21,9 +21,11 @@ export default function About() {
           that significantly aided my business, generating approximately £600 in
           revenue by December 2022. Recognizing the need for formal education, I
           turned to <span className={"text-emerald-300"}>Northcoders</span> to
-          solidify my skills. So I got on a cohort months down to give me time
-          to sharpen my JS skills before I Join. I successfully completed their
-          software development course and graduated in November 2023.
+          solidify my skills. So I got on a cohort months down the line to give
+          me time to sharpen my{" "}
+          <span className={"text-emerald-300"}>JavaScript</span> skills before I
+          Join. I successfully completed their software development course and
+          graduated in November 2023.
         </p>
         <img
           src={me}
