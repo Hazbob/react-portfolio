@@ -5,11 +5,11 @@
 @tailwind utilities;
 body, html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 .hover-2 {
     --b: .1em;    /* border length*/
