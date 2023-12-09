@@ -31,7 +31,7 @@ export default function Header() {
           className={
             "text-emerald-300 h-fit border-2 border-emerald-300 text-center w-60 py-5 hover-2"
           }
-          href={"https://rose-deanne-43.tiiny.site/"}
+          href={"https://pink-faun-23.tiiny.site/"}
           target={"_blank"}
         >
           Checkout my resume!
