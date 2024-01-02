@@ -9,13 +9,10 @@ import { SiAxios } from "react-icons/si";
 import { GiClick } from "react-icons/gi";
 
 import skye from "../../assets/skyenews.png";
-import { useState } from "react";
-import Footer from "../Footer.jsx";
 export default function SkyeNewsFE() {
-  const [showMore, setShowMore] = useState(false);
   return (
-    <div style={{ height: "80vh" }}>
-      <ScrollArea style={{ backgroundColor: "#0A1A2F" }}>
+    <div>
+      <div style={{ backgroundColor: "#0A1A2F" }}>
         <section>
           <h2 className={"text-center text-4xl font-bold text-blue-200"}>
             Skye News FE - News Web App
@@ -144,7 +141,7 @@ export default function SkyeNewsFE() {
             </section>
           </div>
         </section>
-      </ScrollArea>
+      </div>
       <div className={"h-20 sm:h-0"}></div>
     </div>
   );

@@ -1,22 +1,15 @@
 import { Group, HoverCard, ScrollArea, Text } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
 import { Modal, Button } from "@mantine/core";
 import { IoLogoFirebase } from "react-icons/io5";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiExpo, SiTypescript } from "react-icons/si";
 import { FaGithub, FaYoutube } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { GiClick } from "react-icons/gi";
-import { useState } from "react";
-import Footer from "../Footer.jsx";
 
 export default function TrippyCard() {
-  const [opened, { open, close }] = useDisclosure(false);
-  const [showMore, setShowMore] = useState(false);
-
   return (
-    <div style={{ height: "80vh" }}>
-      <ScrollArea style={{ backgroundColor: "#0A1A2F" }}>
+    <div>
+      <div style={{ backgroundColor: "#0A1A2F" }}>
         <section>
           <h2 className={"text-center text-4xl font-bold text-blue-200  "}>
             Trippy - Mobile App
@@ -160,7 +153,7 @@ export default function TrippyCard() {
             </section>
           </div>
         </section>
-      </ScrollArea>
+      </div>
     </div>
   );
 }

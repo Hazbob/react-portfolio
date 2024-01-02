@@ -1,40 +1,31 @@
 import { useState } from "react";
 import { Button, Group, HoverCard, ScrollArea, Text } from "@mantine/core";
-import {
-  FaCss3Alt,
-  FaExternalLinkAlt,
-  FaGithub,
-  FaReact,
-} from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiAxios } from "react-icons/si";
-import { GiClick } from "react-icons/gi";
-import skyeBE from "../../assets/skyenewsbe.png";
-import { SiJest } from "react-icons/si";
+import jobAPI from "../../assets/jobAPI.png";
+import { SiJest, SiPrisma, SiTypescript } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 import { WiTrain } from "react-icons/wi";
 import { DiPostgresql } from "react-icons/di";
 import { AiOutlineConsoleSql } from "react-icons/ai";
-import Footer from "../Footer.jsx";
+import { MdOutlineSecurity } from "react-icons/md";
 
-export default function SkyeNewsBE() {
-  const [showMore, setShowMore] = useState(false);
+export default function JobApplicationApi() {
   return (
     <div>
       <section>
         <h2 className={"text-center text-4xl font-bold text-blue-200"}>
-          Skye News BE - REST API
+          Job Application Tracker - REST API
         </h2>
         <h3 className={"text-center my-4 text-blue-200"}>
-          Custom built REST api - bespoke for Skye News
+          Custom built REST api with CRUD operations.
         </h3>
         <ul className={"flex items-center justify-center gap-4"}>
           <li>
             <a
               className={"flex"}
               target={"_blank"}
-              href="https://github.com/Hazbob/be-nc-news"
+              href="https://github.com/Hazbob/Application-Tracker"
             >
               <FaGithub color={"#6EE7B7"} size={"2.5em"} />{" "}
               <FaExternalLinkAlt color={"#6EE7B7"} />
@@ -51,14 +42,12 @@ export default function SkyeNewsBE() {
             </a>
           </li>
         </ul>
-
         <img
           loading={"lazy"}
           className={"w-10/12 mx-auto md:w-3/5  "}
-          src={skyeBE}
-          alt="screenshot of Skye News Backend Code"
+          src={jobAPI}
+          alt="screenshot of the Job application api code"
         />
-
         <h1 className={"text-center font-bold  text-blue-200"}>Stack</h1>
         <div
           className={
@@ -72,11 +61,14 @@ export default function SkyeNewsBE() {
               <HoverCard width={280} shadow="md">
                 <HoverCard.Target>
                   <Button color={"dark-blue"} className={"text-xl"}>
-                    <IoLogoJavascript size={"2em"} />
+                    <SiTypescript size={"2em"} />
                   </Button>
                 </HoverCard.Target>
                 <HoverCard.Dropdown>
-                  <Text size="sm">Used for the building of endpoints</Text>
+                  <Text size="sm">
+                    Programming language used, particularly with prisma. DX was
+                    fantastic.
+                  </Text>
                 </HoverCard.Dropdown>
               </HoverCard>
             </Group>
@@ -93,9 +85,8 @@ export default function SkyeNewsBE() {
                 </HoverCard.Target>
                 <HoverCard.Dropdown>
                   <Text size="sm">
-                    Used to render the UI, all created manually apart from some
-                    of the navigation buttons, that were sourced from
-                    MaterialUI.
+                    Node was used to be able to run JavaScript out of the
+                    browser.
                   </Text>
                 </HoverCard.Dropdown>
               </HoverCard>
@@ -112,7 +103,10 @@ export default function SkyeNewsBE() {
                   </Button>
                 </HoverCard.Target>
                 <HoverCard.Dropdown>
-                  <Text size="sm">Framework for node js.</Text>
+                  <Text size="sm">
+                    Used to make some things easier than just with node, for
+                    example routing.
+                  </Text>
                 </HoverCard.Dropdown>
               </HoverCard>
             </Group>
@@ -154,7 +148,7 @@ export default function SkyeNewsBE() {
                 </HoverCard.Dropdown>
               </HoverCard>
             </Group>
-          </section>{" "}
+          </section>
           <section>
             <h3 className="text-sm text-center text-emerald-300">PostgreSQL</h3>
 
@@ -187,6 +181,63 @@ export default function SkyeNewsBE() {
                   <Text size="sm">
                     Query language used for, creating the CRUD requests to our
                     database.
+                  </Text>
+                </HoverCard.Dropdown>
+              </HoverCard>
+            </Group>
+          </section>{" "}
+          <section>
+            <h3 className="text-sm text-center text-emerald-300">PRISMA</h3>
+
+            <Group justify="center">
+              <HoverCard width={280} shadow="md">
+                <HoverCard.Target>
+                  <Button color={"dark-blue"} className={"text-xl"}>
+                    <SiPrisma size={"2em"} />
+                  </Button>
+                </HoverCard.Target>
+                <HoverCard.Dropdown>
+                  <Text size="sm">
+                    ORM used for interacting with my PSQL database. Used to
+                    build the schema, and migrate the dbs.
+                  </Text>
+                </HoverCard.Dropdown>
+              </HoverCard>
+            </Group>
+          </section>
+          <section>
+            <h3 className="text-sm text-center text-emerald-300">Hashing</h3>
+
+            <Group justify="center">
+              <HoverCard width={280} shadow="md">
+                <HoverCard.Target>
+                  <Button color={"dark-blue"} className={"text-xl"}>
+                    <MdOutlineSecurity size={"2em"} />
+                  </Button>
+                </HoverCard.Target>
+                <HoverCard.Dropdown>
+                  <Text size="sm">
+                    I used salted hashing for user security, so that passwords
+                    are not stored on the database.
+                  </Text>
+                </HoverCard.Dropdown>
+              </HoverCard>
+            </Group>
+          </section>
+          <section>
+            <h3 className="text-sm text-center text-emerald-300">JWT</h3>
+
+            <Group justify="center">
+              <HoverCard width={280} shadow="md">
+                <HoverCard.Target>
+                  <Button color={"dark-blue"} className={"text-xl"}>
+                    <MdOutlineSecurity size={"2em"} />
+                  </Button>
+                </HoverCard.Target>
+                <HoverCard.Dropdown>
+                  <Text size="sm">
+                    I used Json Web Tokens to protect routes, handle user login
+                    and user registration.
                   </Text>
                 </HoverCard.Dropdown>
               </HoverCard>
