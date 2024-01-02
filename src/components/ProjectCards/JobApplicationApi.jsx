@@ -35,7 +35,7 @@ export default function JobApplicationApi() {
             <a
               className={"flex"}
               target={"_blank"}
-              href="https://be-northcoder-news.onrender.com/api/articles"
+              href="https://jobapplicationtracker-ubqh.onrender.com"
             >
               <TbWorldWww color={"#6EE7B7"} size={"3em"} />
               <FaExternalLinkAlt color={"#6EE7B7"} />
