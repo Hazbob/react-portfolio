@@ -44,7 +44,7 @@ export default function JobApplicationApi() {
         </ul>
         <img
           loading={"lazy"}
-          className={"w-10/12 mx-auto md:w-3/5  "}
+          className={"w-10/12 mx-auto md:w-1/5 "}
           src={jobAPI}
           alt="screenshot of the Job application api code"
         />

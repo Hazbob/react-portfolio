@@ -53,7 +53,7 @@ export default function SkyeNewsFE() {
 
           <img
             loading={"lazy"}
-            className={"w-10/12 mx-auto md:w-3/5 "}
+            className={"w-10/12 mx-auto md:w-2/5"}
             src={skye}
             alt="screenshot of Skye News Homepage"
           />

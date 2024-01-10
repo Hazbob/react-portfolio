@@ -50,7 +50,7 @@ export default function TrippyCard() {
           </ul>
           <iframe
             className={"mx-auto"}
-            width="80%"
+            width="50%"
             height="400"
             src={`https://www.youtube.com/embed/usUjBZ9Afok`}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -54,7 +54,7 @@ export default function SkyeNewsBE() {
 
         <img
           loading={"lazy"}
-          className={"w-10/12 mx-auto md:w-3/5  "}
+          className={"w-10/12 mx-auto md:w-2/5  "}
           src={skyeBE}
           alt="screenshot of Skye News Backend Code"
         />
