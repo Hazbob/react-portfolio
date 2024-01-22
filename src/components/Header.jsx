@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Footer from "./Footer.jsx";
 import About from "./About.jsx";
+import cv from "../assets/HarryRobinsonCVFS.pdf";
 export default function Header() {
   return (
     <div>
@@ -24,15 +25,16 @@ export default function Header() {
           I'm a Junior Software Engineer.
         </h2>
         <p style={{ color: "#8992B0" }} className={"w-full md:w-2/3"}>
-          Specializing in full stack development, allowing me to build stunning
+          Specialising in full stack development, allowing me to build stunning
           digital experiences from the ground up.
         </p>
         <a
           className={
             "text-emerald-300 h-fit border-2 border-emerald-300 text-center w-60 py-5 hover-2"
           }
-          href={"https://pink-faun-23.tiiny.site/"}
+          href={cv}
           target={"_blank"}
+          rel="noopener noreferrer"
         >
           Checkout my resume!
         </a>
