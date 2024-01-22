@@ -5,11 +5,16 @@ import { AiOutlineConsoleSql } from "react-icons/ai";
 import { DiPostgresql } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
 import { LuTestTubes } from "react-icons/lu";
-import { SiTailwindcss } from "react-icons/si";
+import { SiPrisma, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { WiTrain } from "react-icons/wi";
-import { findAllByDisplayValue } from "@testing-library/react";
-import MiniNav from "./MiniNav.jsx";
 
+import * as PropTypes from "prop-types";
+
+function IoLogoTypescript(props) {
+  return null;
+}
+
+IoLogoTypescript.propTypes = { size: PropTypes.string };
 export default function SkillsContainer() {
   return (
     <div id={"skills"} className={"w-screen px-5 mt-10"}>
@@ -36,6 +41,51 @@ export default function SkillsContainer() {
                 <Text size="sm">
                   JavaScript : Learned On Northcoders Bootcamp, and by
                   completing a udemy course with 67.5 total lecture time.
+                </Text>
+              </HoverCard.Dropdown>
+            </HoverCard>
+          </Group>
+        </section>
+        <section>
+          <h3 className="text-center text-emerald-300">TypeScript</h3>
+
+          <Group justify="center">
+            <HoverCard width={280} shadow="md">
+              <HoverCard.Target>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
+                  <SiTypescript size="2em" />
+                </Button>
+              </HoverCard.Target>
+              <HoverCard.Dropdown>
+                <Text size="sm">
+                  TypeScript : Taught myself to use TypeScript to build a
+                  full-stack job application tracker, this was particularly
+                  useful alongside prisma.
+                </Text>
+              </HoverCard.Dropdown>
+            </HoverCard>
+          </Group>
+        </section>{" "}
+        <section>
+          <h3 className="text-center text-emerald-300">Prisma</h3>
+
+          <Group justify="center">
+            <HoverCard width={280} shadow="md">
+              <HoverCard.Target>
+                <Button
+                  color={"dark-blue"}
+                  style={{ height: "5rem", width: "5rem" }}
+                >
+                  <SiPrisma size="2em" />
+                </Button>
+              </HoverCard.Target>
+              <HoverCard.Dropdown>
+                <Text size="sm">
+                  Prisma : Used this to learn a skill commonly used in
+                  enterprise to interact with databases.
                 </Text>
               </HoverCard.Dropdown>
             </HoverCard>
